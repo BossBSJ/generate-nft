@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 100vh;
+  }
+  
+  .card {
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.58);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  
+    
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .left-child{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+  }
+  /*  */
+  .topic{
+    font-size: 25px;
+    width: 100%;
+    /* margin: 10px */
+  }
+  
+  label{
+    font-size: 20px;
+  }
+  
+  .inputbox{
+    margin: 5px;
+  
+  }
+  
+  .image{
+    margin: 30%;
+    width: 50%;
+  }
+  
+  .poswallet{
+    right: 10px;
+  }

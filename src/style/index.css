@@ -5,6 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #4a90e2;
+  background-image:
+    radial-gradient(at 47% 33%, hsl(226.70, 77%, 40%) 0, transparent 59%),
+    radial-gradient(at 82% 65%, hsl(198.00, 100%, 50%) 0, transparent 55%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; */
+  background-color: #e47878;
 }
 
 code {

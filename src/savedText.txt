@@ -1,0 +1,55 @@
+<div className='container'>
+    <div className='card'>
+        <form className='left-child'>
+          <div>
+            logo
+          </div>
+          <div className='topic'>Create your token</div>
+          <div>
+            <label>Tokenname</label>
+            <div>
+              <input 
+              className='inputbox' 
+              id="input-tokenname" 
+              type="text" 
+              name="tokenname"
+              placeholder='Tokenname'
+              ></input>
+            </div>
+          </div>
+
+          <div>
+            <label>decimal</label>
+            <div>
+              <input className='inputbox' id="input-decimal" type="text" name="decimal"></input>
+            </div>
+          </div>
+
+          <div>
+            <label>mint amount</label>
+            <div>
+              <input className='inputbox' id="input-mint-amount" type="text" name="mintamount"></input>
+            </div>
+          </div>
+
+          <div>
+            <label>To Address</label>
+            <div>
+              <input className='inputbox' id="input-to-address" type="text" name="toaddress"></input>
+            </div>
+          </div>
+          
+          <div>{BasicButtons('Submit')}</div>
+        </form>
+
+        <div>
+
+        <div>{BasicButtons('Connect')}</div>
+        <img 
+          className='image'
+          src = {imageicon}
+        />
+        </div>
+
+    </div>
+  </div>
