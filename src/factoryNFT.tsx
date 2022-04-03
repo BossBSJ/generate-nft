@@ -22,36 +22,6 @@ function BasicButtons(str:string) {
     );
   }
 
-function BasicTextFields(str:string) {
-    return (
-        <Box
-        component="form"
-        sx={{
-            '& > :not(style)': { m: 1, width: '25ch' },
-        }}
-        noValidate
-        autoComplete="off"
-        >
-        <TextField id="outlined-basic" label={str} variant="outlined" />
-        </Box>
-    );
-}
-
-function Inputs(str:string, setData:any, Data:any) {
-    return (
-      <Box
-        component="form"
-        sx={{
-          '& > :not(style)': { m: 1 },
-        }}
-        noValidate
-        autoComplete="off"
-      >
-        <Input placeholder={str} inputProps={setData(Data)} />
-      </Box>
-    );
-  }
-
 const FactoryNFT = () => {
     let contractAddress = '0x892C98402B736c806a7789923F5518275e95d36f'
 
