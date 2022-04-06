@@ -3,12 +3,7 @@ import React, {useEffect, useState} from 'react'
 import factoryNFT_abi from './contracts/factoryNFT_abi.json'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import FormControl from '@mui/material/FormControl';
 import {pinJSONToIPFS} from './pinata'
-import { InputLabel } from '@mui/material';
-import Input from '@mui/material/Input';
 import './style/factoryNFT.css'
 
 
@@ -90,16 +85,8 @@ const FactoryNFT = () => {
                 return {success: true,
                         tokenId        
                 }
-                // console.log(await contract.balanceOf(defaultAccount))
             }
     }
-
-    // useEffect (() => {
-    //     setName("dog1")
-    //     setDescription("very good dog")
-    //     setRecipient("0xcFCe0AD3EF6d44b58f141381f922B799380A5F74")
-    //     setUrl("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*")
-    // }, [])
 
     async function assemble() {
         console.log({
@@ -128,17 +115,12 @@ const FactoryNFT = () => {
     <div className='container'>
     <div className='card'>
         <form className='left-child'>
-          <div>
-            logo
-          </div>
+          
           <div className='topic'>Create your NFT</div>
           <div>
             <div>
               <input 
                 className='inputbox' 
-                // id="input-tokenname" 
-                // type="text" 
-                // name="tokenname"
                 placeholder='Name'
                 onChange={handleOnChangeName}
                 
@@ -150,9 +132,6 @@ const FactoryNFT = () => {
             <div>
               <input 
                 className='inputbox' 
-                // id="input-description" 
-                // type="text" 
-                // name="description"
                 placeholder='Description'
                 onChange={handleOnChangeDescription}
               ></input>
@@ -163,9 +142,6 @@ const FactoryNFT = () => {
             <div>
               <input 
                 className='inputbox' 
-                // id="input-url" 
-                // type="text" 
-                // name="url"
                 placeholder='url'
                 onChange={handleOnChangeUrl}
               ></input>
@@ -176,9 +152,6 @@ const FactoryNFT = () => {
             <div>
               <input 
               className='inputbox' 
-              // id="input-to-address" 
-              // type="text" 
-              // name="toaddress"
               placeholder='recipient'
               onChange={handleOnChangeRecipient}
               ></input>
